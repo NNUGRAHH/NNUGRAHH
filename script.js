@@ -4,12 +4,15 @@ document.getElementById('quizForm').addEventListener('submit', function(e) {
     let score = 0;
     const answers = {
         q1: 'A',
-        q2: 'C',
-        q3: 'D',
-        q4: 'B',
-        q5: 'A',
-        // Tambahkan semua jawaban yang benar
-        q25: 'A'
+        q2: 'B',
+        q3: 'C',
+        q4: 'A',
+        q5: 'B',
+        q6: 'C',
+        q7: 'E',
+        q8: 'D',
+        q9: 'B',
+        q10: 'A'
     };
 
     // Cek jawaban siswa
@@ -30,7 +33,7 @@ document.getElementById('quizForm').addEventListener('submit', function(e) {
     } else if (score >= totalQuestions * 0.5) {
         message += "<br>Anda lulus, tapi perlu belajar lagi.";
     } else {
-        message += "<br>Anda gagal. Coba lagi ya!";
+        message += "<br>GOBLOG BGT JADI ORANG!!";
     }
 
     document.getElementById('result').innerHTML = message;
