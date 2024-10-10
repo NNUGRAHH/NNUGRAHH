@@ -39,11 +39,16 @@
         <img src="WhatsApp Image 2024-10-11 at 02.06.49.jpeg" alt="Sayangkuuuu" style="border-radius: 10px; max-width: 100%; height: auto;">
     </div>
 
+    <audio src="banda neira.mp3" autoplay></audio>
+    
     <script>
         function showLove() {
             const surprise = document.getElementById('surprise');
             surprise.style.display = 'block';
             surprise.style.animation = 'fadeIn 0.5s forwards';
+
+            const audio = document.querySelector('audio');
+            audio.play(); // Memutar lagu
         }
     </script>
 </body>
