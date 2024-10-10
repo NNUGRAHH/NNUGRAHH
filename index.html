@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAYANG REVINAAAAAAA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        #surprise {
+            display: none;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <h1>Halo, Sayangku!</h1>
+    <p>cuman hal sederhana gini kok hehe, semoga kamu seneng</p>
+    <button onclick="showLove()">Pencet Sini Yang</button>
+
+    <div id="surprise">
+        <h2>I love you!</h2>
+        <img src="https://via.placeholder.com/150" alt="Gambar Cinta">
+    </div>
+
+    <script>
+        function showLove() {
+            document.getElementById('surprise').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
