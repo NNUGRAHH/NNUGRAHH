@@ -41,7 +41,9 @@
 
     <script>
         function showLove() {
-            document.getElementById('surprise').style.display = 'block';
+            const surprise = document.getElementById('surprise');
+            surprise.style.display = 'block';
+            surprise.style.animation = 'fadeIn 0.5s forwards';
         }
     </script>
 </body>
