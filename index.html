@@ -3,40 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAYANG REVINAAAAAAA</title>
+    <title>SAYANGGG REVINAAA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Menggunakan font dari Google Fonts -->
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #fafafa; /* Warna latar belakang cerah */
             color: #333;
             text-align: center;
-            padding: 50px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
         }
         #surprise {
             display: none;
             margin-top: 20px;
+            animation: fadeIn 0.5s forwards;
+            background-color: #fff; /* Background putih untuk konten */
+            border-radius: 8px; /* Sudut membulat */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+            padding: 20px;
         }
         button {
-            padding: 10px 20px;
-            background-color: #ff69b4;
+            padding: 12px 25px;
+            background-color: #3897f0; /* Warna biru Instagram */
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            margin-top: 20px;
         }
         button:hover {
-            background-color: #ff1493;
+            background-color: #007bbf; /* Warna lebih gelap saat hover */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        img {
+            max-width: 100%; /* Responsif */
+            border-radius: 8px; /* Sudut membulat untuk gambar */
+            margin-top: 10px; /* Jarak atas */
         }
     </style>
 </head>
 <body>
-    <h1>Halo, Sayangku!</h1>
-    <p>cuman hal sederhana gini kok hehe, semoga kamu seneng</p>
+    <h1>HALO, SAYANGKU!!!</h1>
+    <p>ADA SESUATU NIH BUAT KAMUU, SEMOGA KAMJU SENENG SAYANG:)</p>
     <button onclick="showLove()">PENCET SINI YANG</button>
 
     <div id="surprise">
-        <h2>I love you!</h2>
-        <img src="WhatsApp Image 2024-10-11 at 02.06.49.jpeg" alt="Sayangkuuuu" style="border-radius: 10px; max-width: 100%; height: auto;">
+        <h2 style="color: #3897f0;">I love you!</h2>
+        <img src="WhatsApp Image 2024-10-11 at 02.06.49.jpeg" alt="SAYANGKUU">
     </div>
 
     <audio src="banda neira.mp3" autoplay></audio>
@@ -49,7 +71,8 @@
 
             const audio = document.querySelector('audio');
             audio.play(); // Memutar lagu
-        }
+
+            button.style.display = 'none'; // Menyembunyikan tombol
     </script>
 </body>
 </html>
