@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAYANGGG REVINAAA</title>
+    <title>SAYANG REVINA</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Menggunakan font dari Google Fonts -->
     <style>
         body {
@@ -52,27 +52,31 @@
     </style>
 </head>
 <body>
-    <h1>HALO, SAYANGKU!!!</h1>
-    <p>ADA SESUATU NIH BUAT KAMUU, SEMOGA KAMJU SENENG SAYANG:)</p>
-    <button onclick="showLove()">PENCET SINI YANG</button>
+    <h1>HALO, SAYANGKU!!</h1>
+    <p>ADA SESUATU NIH, SEMOGA KAMU SENENG YA</p>
+    <button onclick="showLove(this)">KLIK DISINI YANG</button>
 
     <div id="surprise">
         <h2 style="color: #3897f0;">I love you!</h2>
-        <img src="WhatsApp Image 2024-10-11 at 02.06.49.jpeg" alt="SAYANGKUU">
+        <img src="WhatsApp Image 2024-10-11 at 02.06.49.jpeg" alt="Sayangku">
     </div>
 
-    <audio src="banda neira.mp3" autoplay></audio>
-    
+    <!-- Tambahkan audio tanpa ID -->
+    <audio src="banda neira.mp3" autoplay></audio> <!-- Ganti 'lagu.mp3' dengan nama file MP3 yang diupload -->
+
     <script>
-        function showLove() {
+        function showLove(button) {
             const surprise = document.getElementById('surprise');
             surprise.style.display = 'block';
-            surprise.style.animation = 'fadeIn 0.5s forwards';
-
+            surprise.style.animation = 'fadeIn 0.5s forwards'; // Menambahkan animasi
+            
+            // Memutar audio dengan autoplay
             const audio = document.querySelector('audio');
             audio.play(); // Memutar lagu
 
+            // Menghilangkan tombol
             button.style.display = 'none'; // Menyembunyikan tombol
+        }
     </script>
 </body>
 </html>
